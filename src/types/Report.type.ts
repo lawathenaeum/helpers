@@ -17,6 +17,8 @@ export interface IReport extends Document {
   judgesList?: Array<ObjectId>;
   added_by: ObjectId | IUser;
   updated_by?: ObjectId | IUser;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 // export interface IReport extends Model<ReportCommentInterface> { };
