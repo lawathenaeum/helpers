@@ -12,10 +12,10 @@ export interface IReport extends Document {
   year: string;
   likes?: number;
   caseRef?: string;
-  slug?: string;
+  slug: string;
   comments?: Array<ObjectId> | Array<IReportComment>;
   judgesList?: Array<ObjectId>;
-  added_by: ObjectId | IUser;
+  added_by?: IUser;
   updated_by?: ObjectId | IUser;
   createdAt: Date;
   updatedAt: Date;
