@@ -1,0 +1,19 @@
+{
+  "name": "@hela-law/helpers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Peter Akaliro",
+  "license": "MIT",
+  "private": false,
+  "typings": "index.d.ts",
+  "scripts": {
+    "clean": "del ./build/*",
+    "build": "yarn clean && tsc"
+  },
+  "dependencies": {
+    "mongoose": "^5.11.17"
+  },
+  "devDependencies": {
+    "del-cli": "^3.0.1"
+  }
+}
