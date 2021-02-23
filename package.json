@@ -1,6 +1,6 @@
 {
   "name": "@hela-law/helpers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./build/index.js",
   "author": "Peter Akaliro",
   "license": "MIT",

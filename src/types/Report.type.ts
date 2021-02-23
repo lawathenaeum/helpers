@@ -1,4 +1,5 @@
 import { Document, ObjectId } from "mongoose";
+import { IUser } from "./User.type";
 
 export interface IReport extends Document {
   court: string;
@@ -14,17 +15,17 @@ export interface IReport extends Document {
   slug?: string;
   comments?: Array<ObjectId> | Array<IReportComment>;
   judgesList?: Array<ObjectId>;
-  added_by: ObjectId;
-  updated_by?: ObjectId;
+  added_by: ObjectId | IUser;
+  updated_by?: ObjectId | IUser;
 }
 
 // export interface IReport extends Model<ReportCommentInterface> { };
 
 export interface IReportComment extends Document {
   content: string;
-  author: ObjectId;
+  author: ObjectId | IUser;
   likes?: number;
   approved?: boolean;
   createdAt: Date;
-  report: ObjectId;
+  report: ObjectId | IReport;
 }
