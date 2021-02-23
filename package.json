@@ -11,7 +11,8 @@
   ],
   "scripts": {
     "clean": "del ./build/*",
-    "build": "yarn clean && tsc"
+    "build": "yarn clean && tsc",
+    "publish": "yarn build && yarn publish"
   },
   "dependencies": {
     "mongoose": "^5.11.17"
