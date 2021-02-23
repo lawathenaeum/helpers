@@ -1,11 +1,14 @@
 {
   "name": "@hela-law/helpers",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./build/index.js",
   "author": "Peter Akaliro",
   "license": "MIT",
   "private": false,
-  "typings": "index.d.ts",
+  "typings": "./build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
   "scripts": {
     "clean": "del ./build/*",
     "build": "yarn clean && tsc"
