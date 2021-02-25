@@ -19,6 +19,7 @@ export interface IReport extends Document {
   updated_by?: ObjectId | IUser;
   createdAt: Date;
   updatedAt: Date;
+  _doc: IReport;
 }
 
 // export interface IReport extends Model<ReportCommentInterface> { };
@@ -30,4 +31,5 @@ export interface IReportComment extends Document {
   approved?: boolean;
   createdAt: Date;
   report: ObjectId | IReport;
+  _doc: IReportComment;
 }

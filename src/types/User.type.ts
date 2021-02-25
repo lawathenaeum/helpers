@@ -24,4 +24,5 @@ export interface IUser extends Document {
   plan: string;
   bio: string;
   image: string;
+  _doc: IUser;
 }
